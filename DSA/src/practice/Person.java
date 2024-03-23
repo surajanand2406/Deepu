@@ -1,0 +1,11 @@
+package practice;
+
+public class Person {
+	Person(){
+		System.out.println("T");
+	}
+	static {
+		System.out.println("S");
+	} 
+
+}

@@ -1,0 +1,50 @@
+package practice;
+
+public class Test {
+	
+//	static int x=10;
+//	static int y=20;
+	
+	static Integer i;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		System.out.println(x+y);
+//		System.out.println(x + get(30));
+		
+//		int a=5;
+//		int b=7;
+//		System.out.println("result"+a+b);
+//		System.out.println("result"+(a+b));
+//		System.out.println("result"+(a)+(b));
+		
+//		int[][] x = {{2,4,12},{54,23,43}};	
+//		int[][] y= x.clone();
+//		int[] z=x[0].clone();
+//		
+//		System.out.println(x==y);
+//		System.out.println(x[1]==y[1]);
+//		System.out.println(x[0]==z);
+//		System.out.println(x.equals(y));
+		
+		try {
+			System.out.println(i.toString());
+		}catch(RuntimeException ex) {
+			throw ex;
+		}catch(Exception e) {
+			System.out.println(e);
+		}finally {
+			System.out.println("fin");
+		}
+		
+		
+//		Person p = new Person();
+
+	}
+	
+	public static int get(int x) {
+		return x+y;
+	}
+
+}

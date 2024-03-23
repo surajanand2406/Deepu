@@ -1,0 +1,10 @@
+package practice;
+
+public class Employee extends Person {
+	Employee(){
+		System.out.println("E");
+	}
+	{
+		System.out.println("F");
+	}
+}	

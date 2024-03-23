@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		LinkedList<Integer> l = new LinkedList<>();
+//		
+//		
+//		l.addLast(8);
+//		l.removeFirst();
+//		
+//		System.out.println(l);
+		search();
+
+	}
+	
+	public static void reverseList(){
+		List<String> clothesfavv = new ArrayList<>();
+	      clothesfavv.add("Raymond Shirt");
+	      clothesfavv.add("Impact Pants");
+	      clothesfavv.add("Socks of Champion");
+	      clothesfavv.add("Shoes By Bata");
+	      System.out.println("Before reversing the whole data:");
+	      System.out.println(clothesfavv);
+	      List reverseClothesfavv = IntStream.range(0, clothesfavv.size()).map(i -> clothesfavv.size() - 1-i).mapToObj(clothesfavv::get).collect(Collectors.toList());
+	      
+	      
+	      List<String> clothesstore2023 = new ArrayList<>();
+	      clothesstore2023.add("T-shirt Of Raymond");
+	      clothesstore2023.add("Pants By Impact");
+	      clothesstore2023.add("Socks Of Champion");
+	      clothesstore2023.add("Shoes Of Bata");
+	      List<String> reverseclothesstore2023 = new ArrayList<>();
+	      ListIterator<String> listIterator = clothesstore2023.listIterator(clothesstore2023.size());
+	      while(listIterator.hasPrevious()){
+	         String elemenString = listIterator.previous();
+	         reverseclothesstore2023.add(elemenString);
+	      }
+	}
+	
+	public static void search() {
+		int[] nums = {7,5,3,1,2};
+		
+		Arrays.sort(nums);
+		
+		
+		
+//		Arrays.asList(nums);
+		System.out.println(nums);
+//		Stream.of(nums).forEach(System.out::println);
+		
+//		String s ="Deepthi";
+//		StringBuffer sb = new StringBuffer("Deepthi");
+//		sb.reverse();
+//		System.out.println(sb);
+		
+	}
+
+}

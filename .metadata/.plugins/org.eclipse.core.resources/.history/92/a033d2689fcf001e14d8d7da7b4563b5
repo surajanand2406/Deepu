@@ -1,0 +1,28 @@
+package practice;
+
+public class Test {
+	
+	static int x=10;
+	static int y=20;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		System.out.println(x+y);
+//		System.out.println(x + get(30));
+		
+		int a=5;
+		int b=7;
+		System.out.println("result"+a+b);
+		System.out.println("result"+(a+b));
+		System.out.println("result"+(a)+(b));
+		
+//		Person p = new Person();
+
+	}
+	
+	public static int get(int x) {
+		return x+y;
+	}
+
+}
